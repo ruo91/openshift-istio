@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    openshift.io/description: "ISTIO Operator"
+    openshift.io/node-selector: "node-role.kubernetes.io/infra=true"
+  name: istio-operator
+spec:
+  finalizers:
+  - kubernetes
