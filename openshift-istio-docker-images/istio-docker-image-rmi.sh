@@ -6,26 +6,26 @@
 #     OpenShift Container Platform v3.11+
 #
 # - Version
-#     0.5.0 (istio 1.0.4)
+#     0.6.0 (istio 1.0.5)
 #
 # - Maintainer
 #     Yongbok Kim (ruo91@yongbok.net)
 #---------------------------------------------------#
 #!/bin/bash
-REGISTRY_URL="registry.access.redhat.com"
+REGISTRY_URL="registry.example.com"
 
 # ISTIO Images
-# version: 0.5.0 (istio 1.0.4)
-docker rmi $REGISTRY_URL/openshift-istio-tech-preview/istio-operator:0.5.0
-docker rmi $REGISTRY_URL/openshift-istio-tech-preview/galley:0.5.0
-docker rmi $REGISTRY_URL/openshift-istio-tech-preview/openshift-ansible:0.5.0
-docker rmi $REGISTRY_URL/openshift-istio-tech-preview/pilot:0.5.0
-docker rmi $REGISTRY_URL/openshift-istio-tech-preview/proxyv2:0.5.0
-docker rmi $REGISTRY_URL/openshift-istio-tech-preview/mixer:0.5.0
-docker rmi $REGISTRY_URL/openshift-istio-tech-preview/proxy-init:0.5.0
-docker rmi $REGISTRY_URL/openshift-istio-tech-preview/citadel:0.5.0
-docker rmi $REGISTRY_URL/openshift-istio-tech-preview/sidecar-injector:0.5.0
-docker rmi $REGISTRY_URL/openshift-istio-tech-preview/kiali:v0.10.1
+# version: 0.6.0 (istio 1.0.5)
+docker rmi $REGISTRY_URL/openshift-istio-tech-preview/istio-operator:0.6.0
+docker rmi $REGISTRY_URL/openshift-istio-tech-preview/galley:0.6.0
+docker rmi $REGISTRY_URL/openshift-istio-tech-preview/openshift-ansible:0.6.0
+docker rmi $REGISTRY_URL/openshift-istio-tech-preview/pilot:0.6.0
+docker rmi $REGISTRY_URL/openshift-istio-tech-preview/proxyv2:0.6.0
+docker rmi $REGISTRY_URL/openshift-istio-tech-preview/mixer:0.6.0
+docker rmi $REGISTRY_URL/openshift-istio-tech-preview/proxy-init:0.6.0
+docker rmi $REGISTRY_URL/openshift-istio-tech-preview/citadel:0.6.0
+docker rmi $REGISTRY_URL/openshift-istio-tech-preview/sidecar-injector:0.6.0
+docker rmi $REGISTRY_URL/openshift-istio-tech-preview/kiali:0.11.0
 
 # Jaeger Images
 docker rmi $REGISTRY_URL/distributed-tracing-tech-preview/jaeger-agent:1.8.1
