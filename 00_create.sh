@@ -6,7 +6,7 @@
 #     OpenShift Container Platform v3.11+
 #
 # - Version
-#     0.6.0 (istio 1.0.5)
+#     0.9.0 (istio 1.1.0-rc.2)
 #
 # - Maintainer
 #     Yongbok Kim (ruo91@yongbok.net)

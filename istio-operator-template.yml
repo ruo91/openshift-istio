@@ -6,7 +6,7 @@ parameters:
 - displayName: Master Public URL
   description: The public URL for master
   name: OPENSHIFT_ISTIO_MASTER_PUBLIC_URL
-  value: https://kubernetes.default.svc
+  value: https://kubernetes.default.svc:443
 - displayName: OpenShift Release
   description: The version of the OpenShift release.
   name: OPENSHIFT_RELEASE
@@ -24,7 +24,7 @@ parameters:
 - displayName: Default Version
   description: The default image version for istio deployments
   name: OPENSHIFT_ISTIO_VERSION
-  value: 0.6.0
+  value: 0.9.0
 - displayName: Default Deployment Type
   description: The default deployment type for istio deployments
   name: OPENSHIFT_DEPLOYMENT_TYPE
