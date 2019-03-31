@@ -32,8 +32,8 @@ docker push $REGISTRY_URL/distributed-tracing-tech-preview/jaeger-agent:1.11.1
 docker push $REGISTRY_URL/distributed-tracing-tech-preview/jaeger-collector:1.11.1
 docker push $REGISTRY_URL/distributed-tracing-tech-preview/jaeger-elasticsearch:5.6.10
 docker push $REGISTRY_URL/distributed-tracing-tech-preview/jaeger-query:1.11.1
-docker pull $REGISTRY_URL/distributed-tracing-tech-preview/jaeger-all-in-one:1.11.0
-docker pull $REGISTRY_URL/distributed-tracing-tech-preview/jaeger-ingester:1.11.0
+docker push $REGISTRY_URL/distributed-tracing-tech-preview/jaeger-all-in-one:1.11.0
+docker push $REGISTRY_URL/distributed-tracing-tech-preview/jaeger-ingester:1.11.0
 
 # Grafana, Prometheus Images
 docker push $REGISTRY_URL/prom/prometheus:v2.3.1
@@ -45,5 +45,5 @@ docker push $REGISTRY_URL/fabric8/launcher-backend:ab535bc
 docker push $REGISTRY_URL/fabric8/launcher-frontend:4571dfc
 
 # 3-Scale
-docker pull $REGISTRY_URL/openshift-istio-tech-preview/3scale-istio-adapter-tech-preview:0.4.1
-docker pull $REGISTRY_URL/openshift-istio-tech-preview/3scale-istio-adapter:0.4.1
+docker push $REGISTRY_URL/openshift-istio-tech-preview/3scale-istio-adapter-tech-preview:0.4.1
+docker push $REGISTRY_URL/openshift-istio-tech-preview/3scale-istio-adapter:0.4.1
