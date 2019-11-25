@@ -1,0 +1,56 @@
+--- 
+apiVersion: maistra.io/v1
+kind: ServiceMeshControlPlane
+metadata: 
+  name: basic-install
+spec: 
+  istio: 
+    gateways: 
+      istio-egressgateway: 
+        autoscaleEnabled: false
+      istio-ingressgateway: 
+        autoscaleEnabled: false
+        ior_enabled: false
+    global: 
+      #hub: maistra/
+      multitenant: false
+      proxy: 
+        resources: 
+          limits: 
+            cpu: 500m
+            memory: 128Mi
+          requests: 
+            cpu: 100m
+            memory: 128Mi
+    istio_cni: 
+      enabled: false
+    kiali: 
+      dashboard: 
+        passphrase: admin
+        user: admin
+      enabled: true
+      #hub: kiali/
+    mixer: 
+      policy: 
+        autoscaleEnabled: false
+      telemetry: 
+        autoscaleEnabled: false
+        resources: 
+          limits: 
+            cpu: 500m
+            memory: 4G
+          requests: 
+            cpu: 100m
+            memory: 1G
+    pilot: 
+      autoscaleEnabled: false
+      traceSampling: 100.0
+    tracing: 
+      enabled: true
+      #hub: maistra/
+      jaeger: 
+        agentStrategy: DaemonSet
+        tag: "1.13.1"
+        template: production-elasticsearch
+  threeScale: 
+    enabled: false
